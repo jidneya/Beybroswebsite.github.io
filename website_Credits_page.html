@@ -5,85 +5,127 @@
 
 <style>
    body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: Blue;
+  padding: 35px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: blue;
+  color: black;
+}
+
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: left;
+    float: none;
+  }
+}
+
+body {
   background-image: url('beyblade_sparking_watermark.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-}   
-
-.topnav {
-  overflow: hidden;
-  background-color:black;
 }
 
-.topnav a {
-  float: left;
-  color: blue;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 30px;
+  h2 {
+  Background-color:blue;
+   font-size:40px;
+   text-align:center;
+   font: helvetica;
 }
 
-.topnav a:hover {
-  background-color: red;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: white;
-  color: white;
-}
-
-h1 {
-  Background-color:red;
+ h1 {
+  Background-color:blue;
    font-size:70px;
    text-align:center;
    font: helvetica;
 } 
 
-ul{
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+li{
  font-size:30px;
  font: helvetica;
  text-align:center;
 }
 
-</style>
 
+</style>
 </head>
 <body>
 
-   <div class="topnav">
-  <a class="active" href="index.html"><img src="beybros_logo.jpg" alt="Beybros logo" Width="200" height="50"/></a>
-  <a href="beyblade_website_store.html">Store</a>
-  <a href="Beyblade_info.html">Beyblade info</a>
-  <a href="website_Credits_page.html">Credits</a>
-  <a href="beyblade_info_page.html">what is beyblade?</a>
-  <a href="beybros_form.html">feedback form</a>
-  <a href="beybros_website_video.html">YouTube Videos</a>
-  </div>
+<div class="sidebar">
+  <a class="active" href="index.html"><img src="beybros_logo.jpg" alt="Beybros logo" Width="100" height="50"/></a>
+  <a class="active" href="website_Credits_page.html">credits</a>
+  <a class="active" href="beyblade_info_page.html">what is beyblade</a>
+  <a class="active" href="beyblade_website_store.html">store</a>
+  <a class="active" href="Beyblade_info.html">bey info</a>
+  <a class="active" href="beybros_form.html">feedback</a>
+  <a class="active" href="beybros_website_video.html">videos</a>
+</div>
 
-   <h1>Credits</h1>
+<div class="content">   
+<h1>Credits</h1>
    
    <ul style="times roman">
-   <li>Wiki Fandom<br>
+   <li align="center">Wiki Fandom<br>
    <a href="https://www.fandom.com/">wiki fandom</a></li><br>
-   <li>Google images<br>
+   <li align="center">Google images<br>
    <a href="https://www.google.com/imghp?hl=EN">google images</a></li><br>
-   <li>W3Schools<br>
+   <li align="center">W3Schools<br>
    <a href="https://www.w3schools.com/">W3Schools</a></li><br>
-   <li>THEPORTAL0<br>
+   <li align="center">THEPORTAL0<br>
    <a href="https://theportal0.com/">THEPORTAL0</a></li><br>
-   <li>Wikipedia<br>
+   <li align="center">Wikipedia<br>
    <a href="https://www.wikipedia.org/">Wikipedia</a></li><br>
-   <li>youtube<br>
+   <li align="center">youtube<br>
    <a href="https://www.youtube.com/">Youtube</a></li><br>
-   <li>google forms<br>
+   <li align="center">google forms<br>
    <a href="https://www.google.co.uk/forms/about/">Google forms</a></li><br>
-   <li>Mindchamp.in</li><br>
-   <li>Harshith Kakarla</li><br>
+   <li align="center">Mindchamp.in</li><br>
+   <li align="center">Harshith Kakarla</li><br>
+</div>
 
    </body>
 </html>
