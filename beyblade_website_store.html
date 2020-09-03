@@ -5,6 +5,57 @@
 
    <style>
   body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: Blue;
+  padding: 35px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: blue;
+  color: black;
+}
+
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: left;
+    float: none;
+  }
+}
+
+body {
   background-image: url('beyblade_sparking_watermark.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed; 
@@ -14,43 +65,18 @@
 }
 
   h3 {
-  Background-color:red;
+  Background-color:blue;
    font-size:40px;
    text-align:center;
    font: helvetica;
 }
 
  h1 {
-  Background-color:red;
+  Background-color:blue;
    font-size:70px;
    text-align:center;
    font: helvetica;
 } 
-
-
-.topnav {
-  overflow: hidden;
-  background-color:black;
-}
-
-.topnav a {
-  float: left;
-  color: blue;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 30px;
-}
-
-.topnav a:hover {
-  background-color: red;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: white;
-  color: white;
-}
 
 img {
   display: block;
@@ -63,21 +89,24 @@ p{
  font: helvetica;
  text-align:center;
 }
-  </style>
 
+
+</style>
 </head>
 <body>
 
-   <div class="topnav">
-  <a class="active" href="index.html"><img src="beybros_logo.jpg" alt="Beybros logo" Width="200" height="50"/></a>
-  <a href="beyblade_website_store.html">Store</a>
-  <a href="Beyblade_info.html">Beyblade info</a>
-  <a href="website_Credits_page.html">Credits</a>
-  <a href="beyblade_info_page.html">what is beyblade?</a>
-  <a href="beybros_form.html">feedback form</a>
-  <a href="beybros_website_video.html">YouTube Videos</a>
-  </div>
+<div class="sidebar">
+  <a class="active" href="index.html"><img src="beybros_logo.jpg" alt="Beybros logo" Width="100" height="50"/></a>
+  <a class="active" href="website_Credits_page.html">credits</a>
+  <a class="active" href="beyblade_info_page.html">what is beyblade</a>
+  <a class="active" href="beyblade_website_store.html">store</a>
+  <a class="active" href="Beyblade_info.html">bey info</a>
+  <a class="active" href="beybros_form.html">feedback</a>
+  <a class="active" href="beybros_website_video.html">videos</a>
+</div>
 
+   
+   <div class="content">
    <h1>Beybros store</h1>
    <h3>here you will find burst beys from each season</h3>
    <h3>click the bey you want, it will lead to THEPORTAL0, our recommended site for buying authentic beyblade products</h3>
